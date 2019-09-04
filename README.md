@@ -1,1 +1,1 @@
-# mirum-coding-assessment
+# Mirum Coding Assessment
