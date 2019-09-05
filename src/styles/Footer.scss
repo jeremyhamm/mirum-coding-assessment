@@ -1,0 +1,10 @@
+@import "_variables.scss";
+.Footer {
+  position: fixed;
+  bottom: 0;
+  background-color: $outer-space;
+  width: 100%;
+}
+.copyright {
+  margin-left: 10%;
+}
