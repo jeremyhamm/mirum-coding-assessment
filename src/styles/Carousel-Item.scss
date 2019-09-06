@@ -1,11 +1,16 @@
 @import "_variables.scss";
-.carousel {
-  width: 100%;
+.carousel-item {
   height: 100%;
-  padding-top: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+.thumbnail {}
 
 /** XS **/
 @media (max-width: 576px) {}
