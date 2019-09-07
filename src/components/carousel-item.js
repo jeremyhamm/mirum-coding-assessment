@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../styles/Carousel-Item.scss';
 
 const PlanetItem = (props) => {
@@ -11,7 +12,9 @@ const PlanetItem = (props) => {
 
 const Image = (props) => {
   return(
-    <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + props.data + '.jpg'} alt="Planet" className="thumbnail" height="250" width="250"></img>
+    <Link to={`/details/${props.data}`}>
+      <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + props.data + '.jpg'} alt="Planet" className="thumbnail" height="250" width="250"></img>
+    </Link>
   )
 }
 

@@ -6,3 +6,10 @@ body {
   color: $light;
   background-color: $deep-space-sparkle;
 }
+a {
+  color: $light;
+  text-decoration: none;
+  &:hover {
+    color: $yankees-blue;
+  }
+}
