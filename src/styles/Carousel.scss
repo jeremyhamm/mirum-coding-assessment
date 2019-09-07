@@ -1,19 +1,36 @@
 @import "_variables.scss";
 .carousel-container {
-  padding-top: 300px;
-  height: 100%;
+  padding-top: 350px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.carousel {
-  width: 75%;
-  display: inline-flex;
-  justify-content: center;
+  flex-direction: column;
+  .carousel {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .carousel-links {
+    margin-top: 1em;
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 /** XS **/
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .carousel-container {
+    .carousel-links {
+      margin-top: 0;
+    }
+  }
+}
 
 /** SM **/
 @media (min-width: 577px) and (max-width: 767px) {}

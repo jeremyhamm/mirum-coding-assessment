@@ -11,7 +11,7 @@ const PlanetItem = (props) => {
 
 const Image = (props) => {
   return(
-    <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + props.data + '.jpg'} alt="Planet" className="thumbnail" height="150" width="150"></img>
+    <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + props.data + '.jpg'} alt="Planet" className="thumbnail" height="250" width="250"></img>
   )
 }
 
