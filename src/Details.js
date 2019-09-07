@@ -15,7 +15,7 @@ class Details extends Component {
       return (
         <div className="planet-item" id={data.id}>
           <Link to={`/details/${data.name}`}>
-            <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + data.name + '.jpg'} alt="Planet" height="75" width="75"></img>
+            <img src={process.env.REACT_APP_PUBLIC_URL + '/images/thumbnails/' + data.name + '.jpg'} alt="Planet" height="75" width="75"></img>
           </Link>
         </div>
       )
@@ -23,7 +23,12 @@ class Details extends Component {
     const planetDetails = planetData.map(data => {
       if (data.name === this.name) {
         return (
-          <div>{data.description}</div>
+          <div>
+            <p>{data.description}</p>
+            <p>
+              <a href={data.wikipedia} target="_blank">Learn More...</a>
+            </p>
+          </div>
         )
       }
     });
@@ -33,13 +38,15 @@ class Details extends Component {
         <div className="details-container">
           <div className="breadcrumb"><Link to="/">Home</Link> / {this.name}</div>
           <div className="selected-planet">
-            <img src={process.env.REACT_APP_PUBLIC_URL + '/images/' + this.name + '.jpg'} alt="Planet" to={`/details/${this.name}`}></img>
+            <img src={process.env.REACT_APP_PUBLIC_URL + '/images/details/' + this.name + '.jpg'} alt="Planet" to={`/details/${this.name}`}></img>
           </div>
-          <div className="planet-list">
-            {planetThumbnails}
-          </div>
-          <div className="selected-planet-details">
-            {planetDetails}
+          <div className="list-container">
+            <div className="planet-list">
+              {planetThumbnails}
+            </div>
+            <div className="selected-planet-details">
+              {planetDetails}
+            </div>
           </div>
         </div>
         <Footer />

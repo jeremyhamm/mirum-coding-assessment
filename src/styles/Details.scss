@@ -22,24 +22,32 @@
   .selected-planet {
     display: flex;
     justify-content: center;
-    margin-top: 2em;
-    img {
-      height: 30%;
-      width: 30%;
-    }
+    margin-top: 0.5em;
   }
-  .planet-list {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2em;
-    .planet-item {
-      padding: 0 1em;
+  .list-container {
+    flex: 1 1 auto;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    .planet-list {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2em;
+      .planet-item {
+        padding: 0 1em;
+        img {
+          &:hover {
+            opacity: 0.25;
+            background-color: $outer-space;
+          }
+        }
+      }
     }
-  }
-  .selected-planet-details {
-    margin-top: 2em;
-    margin-bottom: 200px;
+    .selected-planet-details {
+      margin-top: 2em;
+      margin-bottom: 200px;
+    }
   }
 }
 
