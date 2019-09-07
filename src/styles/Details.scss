@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   .details-title {
     text-align: center;
   }
@@ -30,12 +31,14 @@
     max-width: 900px;
     margin: 0 auto;
     .planet-list {
-      display: inline-flex;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       width: 100%;
       margin-top: 2em;
       .planet-item {
         padding: 0 1em;
+        z-index: 0;
         img {
           &:hover {
             opacity: 0.25;

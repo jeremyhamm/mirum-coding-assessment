@@ -4,7 +4,12 @@
   bottom: 0;
   background-color: $outer-space;
   width: 100%;
-}
-.copyright {
-  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  .copyright {
+    margin-left: 10%;
+  }
+  .name {
+    margin-right: 10%;
+  }
 }
