@@ -17,7 +17,7 @@
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    min-width: 50px;
+    min-width: 100px;
     .chevron {
       &:hover {
         color: $yankees-blue;
@@ -26,16 +26,16 @@
     }
     .chevron::before {
       border-style: solid;
-      border-width: 0.25em 0.25em 0 0;
+      border-width: 0.5em 0.5em 0 0;
       content: '';
       display: inline-block;
-      height: 0.45em;
+      height: 1em;
       left: 0.15em;
       position: relative;
       top: 0.15em;
       transform: rotate(-45deg);
       vertical-align: top;
-      width: 0.45em;
+      width: 1em;
     }
     .chevron.left:before {
       left: 0;
