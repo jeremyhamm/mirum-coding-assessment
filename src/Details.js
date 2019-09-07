@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import DetailsHeader from './components/details-header.js';
 import Footer from './components/footer.js';
 import planetData from './assets/json/planets.json';
+import './styles/Details.scss';
 
 class Details extends Component {
   constructor(props) {
